@@ -17,7 +17,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @RestController
-@CrossOrigin(origins = {"https://blogerse-frontend.vercel.app"})
+
 @RequestMapping("/blog")
 public class BlogController {
 
