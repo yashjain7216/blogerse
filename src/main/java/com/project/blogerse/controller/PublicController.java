@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@CrossOrigin(origins = {"https://blogerse-frontend.vercel.app"}) // Allow CORS for specific origins
+
 @RequestMapping("/public")
 public class PublicController {
     private static final Logger log = LoggerFactory.getLogger(PublicController.class);
