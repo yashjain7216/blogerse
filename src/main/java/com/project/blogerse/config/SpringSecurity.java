@@ -32,7 +32,7 @@ public class SpringSecurity {
 
         return http.authorizeHttpRequests(request -> request
                         .requestMatchers("/public/**","/**").permitAll()
-                        .requestMatchers("/bloggiator/**", "/user/**").authenticated()
+                        .requestMatchers("/blog/**", "/user/**").authenticated()
                         .requestMatchers("/admin/**").hasRole("ADMIN")
                         .anyRequest().authenticated())
                 .csrf(AbstractHttpConfigurer::disable)
